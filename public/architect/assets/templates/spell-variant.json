@@ -1,0 +1,61 @@
+{
+  "variant_id": "SV-001",
+  "status": "candidate",
+  "house_rule": true,
+  "source_verified": false,
+  "base_spell": {
+    "name": "",
+    "source_file": "references/呪文一覧.md",
+    "source_id": "",
+    "effect": "",
+    "casting_time": "",
+    "mp_cost": "",
+    "san_cost": "",
+    "targets_and_limits": ""
+  },
+  "variant_name": "",
+  "narrative_purpose": "",
+  "changes": [
+    {
+      "id": "M-01",
+      "axis": "targets",
+      "before": "",
+      "after": "",
+      "direction": "buff",
+      "table_impact": ""
+    },
+    {
+      "id": "M-02",
+      "axis": "casting_time",
+      "before": "",
+      "after": "",
+      "direction": "nerf",
+      "table_impact": ""
+    }
+  ],
+  "compensations": [
+    {
+      "buff_id": "M-01",
+      "nerf_id": "M-02",
+      "why_effective": "",
+      "loophole_check": ""
+    }
+  ],
+  "npc_provenance": {
+    "base_acquisition": "",
+    "variant_development": "",
+    "learned_before_use": "",
+    "resources_and_tests": ""
+  },
+  "counterplay": {
+    "pc_options": "",
+    "repeat_use_and_limits": "",
+    "boundary_cases": ""
+  },
+  "review": {
+    "blocking_issues": [],
+    "major_issues": [],
+    "independent_review": ""
+  },
+  "unchanged_fields_policy": "changesにない元呪文の仕様は全て維持する"
+}

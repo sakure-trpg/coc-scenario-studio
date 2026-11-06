@@ -1,0 +1,10 @@
+{
+  "purpose":"シーン候補の構造的分散が成立する形式テスト例。各シーンの因果検証完了を意味しない。",
+  "candidates":[
+    {"id":"D1","title":"救出の条件交渉","scene_role":"交渉","pc_primary_action":"交渉する","dramatic_engine":"利害対立","anomaly_operation":"契約・交換","core_stakes":"他者との関係","story_action":"PCが人質交換に代わる条件を提示する","player_choice":"何を条件として譲るか"},
+    {"id":"D2","title":"感染の伝播を追え","scene_role":"追跡","pc_primary_action":"追う","dramatic_engine":"時間制限","anomaly_operation":"伝播","core_stakes":"生命","story_action":"PCが感染経路を辿り暴走者の接触を止める","player_choice":"追跡か封鎖か"},
+    {"id":"D3","title":"証言の亀裂","scene_role":"対決","pc_primary_action":"告発する","dramatic_engine":"信頼崩壊","anomaly_operation":"認識差","core_stakes":"信頼","story_action":"PCが公聴会で隠蔽の証拠を提示する","player_choice":"誰を公に告発するか"},
+    {"id":"D4","title":"沈みゆく記録庫","scene_role":"探索","pc_primary_action":"潜入する","dramatic_engine":"環境の変質","anomaly_operation":"融合・分裂","core_stakes":"知識の安全","story_action":"PCが変形する施設から原本を持ち出す","player_choice":"証拠か避難者か"},
+    {"id":"D5","title":"観測装置の停止","scene_role":"クライマックス","pc_primary_action":"停止する","dramatic_engine":"選択の不可逆性","anomaly_operation":"時間の接続","core_stakes":"共同体","story_action":"PCが儀式装置を停止させる手順を選ぶ","player_choice":"どの区域を切り離すか"}
+  ]
+}

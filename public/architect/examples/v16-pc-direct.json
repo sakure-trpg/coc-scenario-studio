@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.6",
+  "scenario_id": "DEMO-direct",
+  "pc_involvement": {
+    "mode": "direct_background",
+    "classification_reason": "PCの過去の行為が儀式の封印不全を発生させた",
+    "background_links": [
+      {"pc_background_fact": "PCが10年前に古い儀式を止めた", "causal_link_to_incident": "その時破損した印が現在の異常につながる", "discovery_route": "事件当時の記録と遺物を対照する", "choices_available": "封印を修復する、真相を公表する、代替案を探す"}
+    ],
+    "npc_mediated": {"baseline_progression": [], "contact": {}, "causal_changes": [], "refusal_or_failure_response": ""}
+  },
+  "magicians": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "scenario": {
+    "id": "S-DEMO",
+    "title": "旧資料室の封印（スキル動作確認用の架空例）",
+    "system": "CoC（版未確定、独自儀式）",
+    "premise": "管理人が過去の事故の再発を防ぐため、旧資料室の作業手順を用いる。",
+    "worldlines": ["main"]
+  },
+  "facts": [
+    {"id": "F-001", "text": "過去の管理記録が旧資料室に保管されていた。", "status": "candidate", "depends_on": []},
+    {"id": "F-002", "text": "古い管理記録の由来は施設の改修・封鎖時に作られた引継ぎ台帳である。", "status": "candidate", "depends_on": ["F-001"]}
+  ],
+  "npcs": [
+    {
+      "id": "N-001", "name": "管理人", "human": true,
+      "knowledge_ids": ["K-001"], "action_ids": ["A-001"]
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "K-001", "holder_id": "N-001", "kind": "ritual", "mastery": "can_use",
+      "claim": "異常現象を抑えるための独自の対処手順の一部を実行できる。",
+      "acquisition_event_id": "E-002", "source_type": "archive_record",
+      "source_detail": "施設の改修時に作られた旧引継ぎ台帳の記述。",
+      "provenance_chain": ["F-001", "F-002", "E-001"],
+      "why_exposed": "管理業務で事故の資料を整理していた。",
+      "how_understood": "旧台帳の注記と設備図を照合し、理解できない箇所は調査した。",
+      "why_believed": "再発時に一部の対処手順で異常が一時的に弱まったため。",
+      "limits": "超常現象の原因は知らず、一部の条件の意味も理解していない。",
+      "learning_process": "引継ぎ台帳を読み、模擬準備と実地の手順を複数回確認した。",
+      "requirements": "旧設備の操作順、指定部屋への入室、準備時間が必要。",
+      "costs": "施設設備の損傷と本人の身体的不調の危険がある。",
+      "practice_evidence": "事前の準備記録と以前の不完全な試行が残っている。"
+    }
+  ],
+  "events": [
+    {"id":"E-001", "worldline":"main", "sequence":1, "description":"過去の対処手順が引継ぎ台帳に書き留められた。", "participants":[], "knowledge_gains":[], "knowledge_uses":[], "action_ids":[]},
+    {"id":"E-002", "worldline":"main", "sequence":2, "description":"管理人が旧台帳を発見し、対処手順の知識を得た。", "participants":["N-001"], "knowledge_gains":["K-001"], "knowledge_uses":[], "action_ids":[]},
+    {"id":"E-003", "worldline":"main", "sequence":3, "description":"管理人が記録をもとに準備し、一部の手順を試した。", "participants":["N-001"], "knowledge_gains":[], "knowledge_uses":["K-001"], "action_ids":[]},
+    {"id":"E-004", "worldline":"main", "sequence":4, "description":"異常再発の兆候があり、管理人が再び手順を実行する。", "participants":["N-001"], "knowledge_gains":[], "knowledge_uses":["K-001"], "action_ids":["A-001"]}
+  ],
+  "actions": [
+    {
+      "id":"A-001", "actor_id":"N-001", "event_id":"E-004",
+      "intent":"過去と同様の事故が再発することを防ぐ。",
+      "why_target":"旧設備の異常と対処手順が同じ資料室に結び付いているから。",
+      "why_now":"計測記録と同じ初期兆候が確認されたから。",
+      "why_method":"それ以外に本人が再現可能な対処方法を知らないから。",
+      "capability":"設備の管理権限を持ち、旧台帳に基づく準備を完了している。",
+      "evidence_left":"鍵の使用履歴、設備操作記録、古い台帳への書き込み。",
+      "alternatives":[{"method":"当面施設を閉鎖して退避する", "rejected_because":"閉鎖だけでは以前に異常が施設外へ波及したため、防止として不十分と本人が判断した。"}],
+      "knowledge_required":["K-001"]
+    }
+  ],
+  "open_questions": [
+    {"id":"Q-001", "issue":"台帳の初代記録者は全容を知っていたのか", "severity":"intentional_unknown", "status":"intentional_unknown", "resolution":"根源は不可知。手順の作動条件はGM用に固定し、管理人の習得経路と混同しない。"}
+  ],
+  "decision_log": []
+}

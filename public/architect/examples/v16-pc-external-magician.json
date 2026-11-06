@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.6",
+  "scenario_id": "DEMO-external",
+  "pc_involvement": {
+    "mode": "npc_mediated",
+    "classification_reason": "研究事件はPCと無関係に進み、証言者との接触からPCが参加する",
+    "background_links": [],
+    "npc_mediated": {
+      "baseline_progression": [
+        {"npc_action": "研究者Mが旧校舎で実験を続ける", "consequence": "生徒の失踪が拡大する"},
+        {"npc_action": "Mは次の対象を確保しようとする", "consequence": "証言者が危険にさらされる"}
+      ],
+      "contact": {"npc_id": "X", "circumstance": "証言者XがPCに調査を依頼", "npc_motive": "失踪者を見つけたい", "pc_entry_reason": "依頼、目撃、学生との関係に応じ参加できる"},
+      "causal_changes": [
+        {"pc_action": "矛盾する実験記録を公開する", "affected_event_or_npc": "Mの実験計画とXの立場", "resulting_difference": "実験の秘密が崩れ、Mは対象確保の手段を変更する", "why_npc_alone_cannot": "Xの持つ記録には日時の欠落があり、別地点の物証と照合する必要がある", "info_route": "旧校舎の記録と現場での物証比較"}
+      ],
+      "refusal_or_failure_response": "Xは独自に探し続け、研究者の計画は予定通り進む"
+    }
+  },
+  "magicians": [
+    {"npc_id": "M", "core_goal": "異界への接続方法を完成する", "obsession_origin": "最初の実験で異常な生体情報を得た", "priority_over_life": "知識の完成を自他の生命より優先する", "sacrifice_scope": "被験者も自己の命も必要なら犠牲にする", "risk_known": "怪物に襲われる危険を認識している", "critical_decisions": [
+      {"situation": "怪物の痕跡を観測した", "choice": "実験を続行する", "goal_consistency": "怪物の存在が接続理論の正しさを裏付けると考えた", "evidence_or_consequence": "実験ノートに危険認識と継続指示が残る"}
+    ]}
+  ]
+}

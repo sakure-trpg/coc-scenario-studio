@@ -1,0 +1,9 @@
+{
+  "purpose": "新規シナリオのシーン候補の多様性検査。これは入力例であり、完成案ではない。",
+  "constraints": {"scene_roles_fixed_by_user": false, "pc_actions_fixed_by_user": false, "dramatic_engines_fixed_by_user": false, "anomaly_operations_fixed_by_user": false},
+  "candidates": [
+    {"id":"SC-A","title":"例：交渉の場面","scene_role":"交渉","pc_primary_action":"交渉する","dramatic_engine":"利害対立","anomaly_operation":"契約・交換","core_stakes":"他者との関係","story_action":"NPCとの要求を突き合わせ契約条件を決める","player_choice":"NPCを救う代わりに情報を公開するか"},
+    {"id":"SC-B","title":"例：追跡の場面","scene_role":"追跡","pc_primary_action":"追う","dramatic_engine":"時間制限","anomaly_operation":"伝播","core_stakes":"生命","story_action":"発症者が接触する前に追跡して隔離の方法を探る","player_choice":"捕まえるか病院に伝えるか"},
+    {"id":"SC-C","title":"例：告発の場面","scene_role":"対決","pc_primary_action":"告発する","dramatic_engine":"信頼崩壊","anomaly_operation":"認識差","core_stakes":"信頼","story_action":"証言を突きつけ複数NPCが互いを告発する","player_choice":"誰の証言を公表するか"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scenario": {"id": "S-BROKEN", "title": "失敗例", "system": "CoC", "premise": "魔術師が呪文を使う。", "worldlines": ["main"]},
+  "facts": [{"id":"F-001", "text":"魔導書があったらしい", "status":"candidate", "depends_on":[]}],
+  "npcs": [{"id":"N-001", "name":"魔術師", "human":true, "knowledge_ids":["K-001"], "action_ids":["A-001"]}],
+  "knowledge": [{"id":"K-001", "holder_id":"N-001", "kind":"spell", "mastery":"can_use", "claim":"呪文を使える", "acquisition_event_id":"E-002"}],
+  "events": [
+    {"id":"E-001", "sequence":1, "description":"呪文を使った", "participants":["N-001"], "knowledge_gains":[], "knowledge_uses":["K-001"], "action_ids":["A-001"]},
+    {"id":"E-002", "sequence":2, "description":"後から呪文を学んだ", "participants":["N-001"], "knowledge_gains":["K-001"], "knowledge_uses":[], "action_ids":[]}
+  ],
+  "actions": [{"id":"A-001", "actor_id":"N-001", "event_id":"E-001", "intent":"呪文を使う", "knowledge_required":["K-001"]}],
+  "open_questions": [{"id":"Q-001", "issue":"なぜ本人は呪文を知っているのか", "severity":"major", "status":"open"}],
+  "decision_log": []
+}
