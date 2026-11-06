@@ -1,0 +1,61 @@
+{
+  "variant_id": "SV-TEST",
+  "status": "candidate",
+  "house_rule": true,
+  "source_verified": true,
+  "base_spell": {
+    "name": "架空テスト呪文（実在する呪文ではない）",
+    "source_file": "examples/架空テスト素材",
+    "source_id": "TEST-ONLY",
+    "effect": "単体への光の印",
+    "casting_time": "2ラウンド",
+    "mp_cost": "3",
+    "san_cost": "1",
+    "targets_and_limits": "単体・視界内・1分"
+  },
+  "variant_name": "架空テスト呪文・複数刻印版",
+  "narrative_purpose": "変更差分と代償の対応の形式検査（実シナリオへの使用禁止）",
+  "changes": [
+    {
+      "id": "M-01",
+      "axis": "target_count",
+      "before": "単体",
+      "after": "最大3人",
+      "direction": "buff",
+      "table_impact": "被害対象候補が増える"
+    },
+    {
+      "id": "M-02",
+      "axis": "casting_time",
+      "before": "2ラウンド",
+      "after": "6ラウンド、途中の妨害で中断",
+      "direction": "nerf",
+      "table_impact": "PCが儀式を観測して阻止できる猶予がある"
+    }
+  ],
+  "compensations": [
+    {
+      "buff_id": "M-01",
+      "nerf_id": "M-02",
+      "why_effective": "NPCに短縮手段がなく公開された儀式時間が必ず発生する",
+      "loophole_check": "先に準備して完了させる抜け道を封じる"
+    }
+  ],
+  "npc_provenance": {
+    "base_acquisition": "架空テストでの出所として定義",
+    "variant_development": "架空テストで過程を仮定",
+    "learned_before_use": "テストの時系列内で事前習得",
+    "resources_and_tests": "テスト用に成立条件を仮定"
+  },
+  "counterplay": {
+    "pc_options": "PCは詠唱を中断可能",
+    "repeat_use_and_limits": "連続詠唱ごとに6ラウンド",
+    "boundary_cases": "1〜3人、対象不在は不発"
+  },
+  "review": {
+    "blocking_issues": [],
+    "major_issues": [],
+    "independent_review": "構造検査用のダミー確認。バランス成立の実証ではない"
+  },
+  "unchanged_fields_policy": "changesにない元呪文の仕様は全て維持する"
+}

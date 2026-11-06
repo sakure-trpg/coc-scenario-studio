@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "scenario": {
+    "id": "S-001",
+    "title": "新規シナリオ",
+    "system": "CoC（版未確定）",
+    "premise": "",
+    "worldlines": ["main"]
+  },
+  "facts": [],
+  "npcs": [],
+  "knowledge": [],
+  "events": [],
+  "actions": [],
+  "open_questions": [],
+  "decision_log": []
+}

@@ -1,0 +1,9 @@
+{
+  "purpose":"以前の類似候補を模した不合格例",
+  "candidates":[
+    {"id":"H1","title":"死者のいない葬儀","scene_role":"導入異常目撃","pc_primary_action":"観察する","dramatic_engine":"日常の欠落","anomaly_operation":"欠落","core_stakes":"記憶","story_action":"空の棺を目撃する","player_choice":"調べる"},
+    {"id":"H2","title":"水のない水族館","scene_role":"導入異常目撃","pc_primary_action":"観察する","dramatic_engine":"日常の欠落","anomaly_operation":"欠落","core_stakes":"生命","story_action":"空の水槽を見る","player_choice":"調べる"},
+    {"id":"H3","title":"存在しない事件の裁判","scene_role":"導入異常目撃","pc_primary_action":"観察する","dramatic_engine":"日常の欠落","anomaly_operation":"欠落","core_stakes":"真実","story_action":"不可解な裁判を見る","player_choice":"調べる"},
+    {"id":"H4","title":"誰もいない学校","scene_role":"導入異常目撃","pc_primary_action":"観察する","dramatic_engine":"日常の欠落","anomaly_operation":"欠落","core_stakes":"記憶","story_action":"空の教室を見る","player_choice":"調べる"}
+  ]
+}

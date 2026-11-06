@@ -1,0 +1,28 @@
+{
+  "user_intent": "selection",
+  "material_progress": true,
+  "user_requested_options": false,
+  "is_structural_fork": false,
+  "asks_user_to_choose": false,
+  "options": [],
+  "short_requested": true,
+  "detail_requested": false,
+  "response_text": "B案を採用。古文書から呪文を得たMは試作実験を開始。Vは被験者の記録から真相に近づく。PCには古文書と実験日誌が手掛かりになる。",
+  "confirmed_facts": [
+    {"id": "F-001", "text": "術式は裁判冒頭の詠唱後から裁判中だけ有効"}
+  ],
+  "issues": [
+    {
+      "id": "Q-001",
+      "status": "resolved",
+      "severity": "none",
+      "relevant_fact_ids": ["F-001"],
+      "reported_as_current_problem": false
+    }
+  ],
+  "spell_source": {
+    "claimed_verified": false,
+    "claimed_complete": false,
+    "source_refs": []
+  }
+}

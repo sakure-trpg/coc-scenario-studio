@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.6",
+  "scenario_id": "S-001",
+  "pc_involvement": {
+    "mode": "undetermined",
+    "classification_reason": "",
+    "background_links": [],
+    "npc_mediated": {
+      "baseline_progression": [],
+      "contact": {
+        "npc_id": "",
+        "circumstance": "",
+        "npc_motive": "",
+        "pc_entry_reason": ""
+      },
+      "causal_changes": [],
+      "refusal_or_failure_response": ""
+    }
+  },
+  "magicians": []
+}
